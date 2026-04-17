@@ -1,0 +1,66 @@
+[
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=asyawatch.com&sz=%size%",
+        "fileHash": "sha256-e7d83dd6fb566d311f195accc3f41b2d74c2a2ade9e560d09c62b0a89cd4b78f",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/memetvarol-sketch/yapay",
+        "fileSize": 31671,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            "nikyokki",
+            "vrolok"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 6,
+        "internalName": "AsyaWatch",
+        "description": "AsyaWatch \u2014 T\u00fcrk\u00e7e Asya Film ve Dizileri",
+        "url": "https://raw.githubusercontent.com/memetvarol-sketch/yapay/builds/AsyaWatch.cs3",
+        "name": "AsyaWatch"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=dizikorea.pw&sz=%size%",
+        "fileHash": "sha256-ccbd40903adf97a42c386035120d46afedf0e5edd5a2939a4b7fc937da41a75e",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/memetvarol-sketch/yapay",
+        "fileSize": 20891,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            "keyiflerolsun",
+            "vrolok"
+        ],
+        "tvTypes": [
+            "AsianDrama"
+        ],
+        "version": 11,
+        "internalName": "DiziKorea",
+        "description": "En G\u00fcncel Kore Dizileri izleme Sitesi",
+        "url": "https://raw.githubusercontent.com/memetvarol-sketch/yapay/builds/DiziKorea.cs3",
+        "name": "DiziKorea"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=koreanturk.net&sz=%size%",
+        "fileHash": "sha256-19e54e9146d706694fddca483f84fdd7dd6d16ab5dd0e31faaf44a9925172002",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/memetvarol-sketch/yapay",
+        "fileSize": 13056,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            "keyiflerolsun",
+            "vrolok"
+        ],
+        "tvTypes": [
+            "AsianDrama"
+        ],
+        "version": 7,
+        "internalName": "KoreanTurk",
+        "description": "G\u00fcney Kore sevdal\u0131lar\u0131n\u0131n vazge\u00e7emedi\u011fi T\u00fcrkiye'nin en \u00e7ok ziyaret edilen G\u00fcney Kore Portal\u0131",
+        "url": "https://raw.githubusercontent.com/memetvarol-sketch/yapay/builds/KoreanTurk.cs3",
+        "name": "KoreanTurk"
+    }
+]
