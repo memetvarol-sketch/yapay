@@ -1,4 +1,4 @@
-rootProject.name = "DiziciPlugins"
+rootProject.name = "DiziciPlugins" // Dizici
 
 val disabled = listOf<String>()
 
