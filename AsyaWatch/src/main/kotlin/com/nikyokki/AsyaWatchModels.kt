@@ -95,22 +95,22 @@ data class ListItems(
     @JsonProperty("result") val result: List<ContentItem>
 )
 
-data class Episode(
-    @JsonProperty("season_no")  val seasonNo: Int?,
-    @JsonProperty("episode_no") val episodeNo: Int?,
+data class SeriesEpisode(
+    @JsonProperty("season_no")    val seasonNo: Int?,
+    @JsonProperty("episode_no")   val episodeNo: Int?,
     @JsonProperty("episode_text") val epText: String?,
-    @JsonProperty("used_slug")  val usedSlug: String?,
+    @JsonProperty("used_slug")    val usedSlug: String?,
 )
 
-data class Season(
+data class SeriesSeason(
     @JsonProperty("season_no")   val seasonNo: Int?,
     @JsonProperty("season_text") val seText: String?,
     @JsonProperty("used_slug")   val usedSlug: String?,
-    @JsonProperty("episodes")    val episodes: List<Episode>?,
+    @JsonProperty("episodes")    val episodes: List<SeriesEpisode>?,
 )
 
 data class Seasons(
-    @JsonProperty("result") val seasons: List<Season>?
+    @JsonProperty("result") val seasons: List<SeriesSeason>?
 )
 
 data class EpisodeSources(
