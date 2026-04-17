@@ -1,0 +1,8 @@
+{
+  "name": "Dizici — Türkçe Asya Dizi Reposu",
+  "description": "Kore ağırlıklı, Türkçe altyazılı Asya dizileri için CloudStream eklentileri",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/memetvarol-sketch/yapay/refs/heads/builds/plugins.json"
+  ]
+}
