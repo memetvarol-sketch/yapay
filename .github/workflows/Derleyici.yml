@@ -18,6 +18,8 @@ on:
 jobs:
   CloudStreamDerleyici:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: "'src' Depo Kontrolü"
         uses: actions/checkout@v4.2.2
