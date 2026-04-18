@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!-- Kaynak değiştir overlay -->
+    <FrameLayout
+        android:id="@+id/source_overlay"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/overlay_background"
+        android:visibility="gone"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kaynak_sec"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sources_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:descendantFocusability="afterDescendants" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Loading ve hata göstergesi -->
+    <LinearLayout
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:indeterminateTint="@color/accent" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yukluyor"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+    </LinearLayout>
+
+    <!-- Kaynak değiştir butonu (sağ üst köşe) -->
+    <TextView
+        android:id="@+id/btn_change_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="@color/source_normal"
+        android:focusable="true"
+        android:padding="12dp"
+        android:text="@string/kaynak_degistir"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</FrameLayout>

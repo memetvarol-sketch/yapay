@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dizici TV</string>
+    <string name="search_hint">Dizi veya film ara…</string>
+    <string name="kaynak_sec">Kaynak Seç</string>
+    <string name="kaynak_degistir">Kaynak Değiştir</string>
+    <string name="yukluyor">Yükleniyor…</string>
+    <string name="hata">Hata oluştu</string>
+    <string name="sezon">Sezon</string>
+    <string name="bolum">Bölüm</string>
+    <string name="oynat">Oynat</string>
+    <string name="tum_kaynaklar">Tüm Kaynaklar</string>
+</resources>
