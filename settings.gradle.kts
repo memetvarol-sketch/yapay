@@ -1,13 +1,19 @@
-rootProject.name = "DiziciPlugins" // Dizici
-
-val disabled = listOf<String>()
-
-File(rootDir, ".").eachDir { dir ->
-    if (!disabled.contains(dir.name) && File(dir, "build.gradle.kts").exists()) {
-        include(dir.name)
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
 
-fun File.eachDir(block: (File) -> Unit) {
-    listFiles()?.filter { it.isDirectory }?.forEach { block(it) }
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://jitpack.io")
+    }
 }
+
+rootProject.name = "DiziciTV"
+include(":app")
