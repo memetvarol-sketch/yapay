@@ -385,3 +385,73 @@ class TurkdizileriProvider : GenericDiziProvider() {
     override val baseUrl = "https://turkdizileri.net"
     override val homeCategories get() = listOf("Son Eklenenler" to "$baseUrl/page/")
 }
+
+// =============================================================================
+// EK KAYNAKLAR
+// =============================================================================
+
+class FullHdDiziProvider : GenericDiziProvider() {
+    override val name = "FullHdDizi"
+    override val baseUrl = "https://www.fullhddizi.pw"
+    override val homeCategories get() = listOf(
+        "Son Eklenenler" to "$baseUrl/page/",
+        "Yabancı Diziler" to "$baseUrl/category/yabanci-dizi/"
+    )
+}
+
+class DiziKingProvider : GenericDiziProvider() {
+    override val name = "DiziKing"
+    override val baseUrl = "https://diziking.net"
+    override val homeCategories get() = listOf("Son Eklenenler" to "$baseUrl/page/")
+}
+
+class HdDizimProvider : GenericDiziProvider() {
+    override val name = "HdDizim"
+    override val baseUrl = "https://www.hddizim.net"
+    override val homeCategories get() = listOf("Son Eklenenler" to "$baseUrl/page/")
+}
+
+class DiziHubProvider : GenericDiziProvider() {
+    override val name = "DiziHub"
+    override val baseUrl = "https://www.dizihub.net"
+    override val homeCategories get() = listOf(
+        "Son Eklenenler" to "$baseUrl/page/",
+        "Diziler" to "$baseUrl/diziler/"
+    )
+}
+
+class YabanciBoldProvider : GenericDiziProvider() {
+    override val name = "YabanciBold"
+    override val baseUrl = "https://www.yabancibold.com"
+    override val homeCategories get() = listOf("Son Eklenenler" to "$baseUrl/page/")
+}
+
+class DiziSeyretProvider : GenericDiziProvider() {
+    override val name = "DiziSeyret"
+    override val baseUrl = "https://www.diziseyret.net"
+    override val homeCategories get() = listOf("Son Eklenenler" to "$baseUrl/page/")
+}
+
+class JaponDiziProvider : GenericDiziProvider() {
+    override val name = "JaponDizi"
+    override val baseUrl = "https://japonanime.com"
+    override val homeCategories get() = listOf(
+        "Son Eklenenler" to "$baseUrl/page/",
+        "Anime" to "$baseUrl/category/anime/"
+    )
+}
+
+class AnimeciProvider : GenericDiziProvider() {
+    override val name = "Animeci"
+    override val baseUrl = "https://www.animeci.com"
+    override val homeCategories get() = listOf("Son Eklenenler" to "$baseUrl/page/")
+}
+
+class TrAnimeProvider : GenericDiziProvider() {
+    override val name = "TrAnime"
+    override val baseUrl = "https://tranime.net"
+    override val homeCategories get() = listOf(
+        "Son Eklenenler" to "$baseUrl/page/",
+        "Anime" to "$baseUrl/category/anime/"
+    )
+}

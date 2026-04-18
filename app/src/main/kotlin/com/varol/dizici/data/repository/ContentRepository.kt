@@ -38,7 +38,17 @@ class ContentRepository {
         DiziMomProvider(),
         DiziYouProvider(),
         DdiziProvider(),
-        TurkdizileriProvider()
+        TurkdizileriProvider(),
+        // Ek kaynaklar
+        FullHdDiziProvider(),
+        DiziKingProvider(),
+        HdDizimProvider(),
+        DiziHubProvider(),
+        YabanciBoldProvider(),
+        DiziSeyretProvider(),
+        JaponDiziProvider(),
+        AnimeciProvider(),
+        TrAnimeProvider()
     )
 
     suspend fun getHomePage(page: Int = 1): List<HomeCategory> = coroutineScope {

@@ -60,9 +60,8 @@ class PlayerActivity : AppCompatActivity() {
     }
 
     private fun setupPlayer() {
-        val dataSourceFactory = OkHttpDataSource.Factory(HttpClient.client)
         player = ExoPlayer.Builder(this)
-            .setMediaSourceFactory(DefaultMediaSourceFactory(dataSourceFactory))
+            .setMediaSourceFactory(DefaultMediaSourceFactory(OkHttpDataSource.Factory(HttpClient.client)))
             .build()
             .also { exo ->
                 playerView.player = exo
@@ -136,6 +135,12 @@ class PlayerActivity : AppCompatActivity() {
         showLoading("${source.providerName} - ${source.quality ?: source.name}")
         sourcesAdapter?.setSelected(sources.indexOf(source))
 
+        // Per-source HTTP headers (Referer vb.) OkHttp factory'ye geçir
+        val dsFactory = OkHttpDataSource.Factory(HttpClient.client).apply {
+            if (source.headers.isNotEmpty()) setDefaultRequestProperties(source.headers)
+        }
+        val mediaSourceFactory = DefaultMediaSourceFactory(dsFactory)
+
         val mediaItemBuilder = MediaItem.Builder().setUri(source.url)
 
         // Altyazı varsa ekle
@@ -152,7 +157,7 @@ class PlayerActivity : AppCompatActivity() {
 
         val mediaItem = mediaItemBuilder.build()
         player?.apply {
-            setMediaItem(mediaItem)
+            setMediaSource(mediaSourceFactory.createMediaSource(mediaItem))
             prepare()
             if (lastPosition > 0) seekTo(lastPosition)
             playWhenReady = true
