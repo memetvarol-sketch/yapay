@@ -1,10 +1,7 @@
 package com.varol.dizici.data.repository
 
 import com.varol.dizici.data.model.*
-import com.varol.dizici.data.provider.AsyaWatchProvider
-import com.varol.dizici.data.provider.ContentProvider
-import com.varol.dizici.data.provider.DiziKoreaProvider
-import com.varol.dizici.data.provider.KoreanTurkProvider
+import com.varol.dizici.data.provider.*
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
